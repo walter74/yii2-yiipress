@@ -2,7 +2,7 @@
     "name": "walter74/yii2-yiipress",
     "description": "Module Yii2 for content management system Yii App",
     "type": "yii2-extension",
-    "keywords": ["yii2","extension","cms","module"],
+    "keywords": ["yii2","extension","cms","module","php"],
     "license": "MIT",
     "authors": [
         {
