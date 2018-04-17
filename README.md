@@ -32,7 +32,7 @@ modules configuartion array
 'modules'=>[
 			'cms' => [
            
-						'class' => 'walter74\yii2-yiipress\Module',
+						'class' => 'walter74\yiipress\Module',
 						
 					]
 			]
