@@ -1,6 +1,6 @@
 <?php
 
-namespace app\modules\cms;
+namespace walter74\yiipress;
 
 /**
  * cms module definition class
