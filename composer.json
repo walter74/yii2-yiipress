@@ -1,0 +1,21 @@
+{
+    "name": "walter74/yii2-yiipress",
+    "description": "Module Yii2 for content management system Yii App",
+    "type": "yii2-extension",
+    "keywords": ["yii2","extension","cms","module"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "walter cosentino",
+            "email": "walt.cose@gmail.com"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "~2.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "walter74\\yiipress\\": ""
+        }
+    }
+}
