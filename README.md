@@ -1,4 +1,4 @@
-Yii Press - Cms Module For Yii Developer(Not Ready Yeat)
+Yii Press - Cms Module For Yii Developer(Not Ready Yet)
 ========================================
 Module Yii2 for content management system Yii App
 
