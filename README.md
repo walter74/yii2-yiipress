@@ -32,11 +32,9 @@ modules configuartion array
 'modules'=>[
 			'cms' => [
            
-<<<<<<< HEAD
-						'class' => 'walter74\yii2-yiipress\Module',
-=======
+
 						'class' => 'walter74\yiipress\Module',
->>>>>>> 4df8bfe047d938d809d3f02a6202fdb341e85bdf
+
 						
 					]
 			]
