@@ -2,7 +2,11 @@
     "name": "walter74/yii2-yiipress",
     "description": "Module Yii2 for content management system Yii App",
     "type": "yii2-extension",
+<<<<<<< HEAD
     "keywords": ["yii2","extension","cms","module"],
+=======
+    "keywords": ["yii2","extension","cms","module","php"],
+>>>>>>> 4df8bfe047d938d809d3f02a6202fdb341e85bdf
     "license": "MIT",
     "authors": [
         {
@@ -11,8 +15,12 @@
         }
     ],
     "require": {
+<<<<<<< HEAD
         "yiisoft/yii2": "~2.0.0",
         "kartik-v/yii2-widget-fileinput": "@dev"
+=======
+        "yiisoft/yii2": "~2.0.0"
+>>>>>>> 4df8bfe047d938d809d3f02a6202fdb341e85bdf
     },
     "autoload": {
         "psr-4": {

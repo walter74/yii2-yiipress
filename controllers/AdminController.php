@@ -8,14 +8,22 @@ class AdminController extends \yii\web\Controller
     {
         return [
             'access' => [
+<<<<<<< HEAD
                 'class' => \yii\filters\AccessControl::className(),
+=======
+                'class' => yii\filters\AccessControl::className(),
+>>>>>>> 4df8bfe047d938d809d3f02a6202fdb341e85bdf
                 //'only' => ['logout','note','clienti','utenti'],
                 'rules' => [
                    
                     [
                        
                         'allow' => true,
+<<<<<<< HEAD
                         'roles' => [$this->module->permission_admin_controller],
+=======
+                        'roles' => ['admin'],
+>>>>>>> 4df8bfe047d938d809d3f02a6202fdb341e85bdf
                     ],
                     
                    
@@ -348,10 +356,15 @@ class AdminController extends \yii\web\Controller
 	    
 	    }
 	    if($action=="pagine"){
+<<<<<<< HEAD
 			      $rawbody = Yii::$app->request->getRawBody();
 			      
 			      $json_response = \yii\helpers\Json::decode($rawbody);
 			      if(Yii::$app->request->isAjax && !empty($json_response)){
+=======
+			  
+			      if(Yii::$app->request->isAjax&&!empty(\yii\helpers\Json::decode(Yii::$app->request->getRawBody()))){
+>>>>>>> 4df8bfe047d938d809d3f02a6202fdb341e85bdf
 				        $data_menu = \yii\helpers\Json::decode(Yii::$app->request->getRawBody());
 				        //var_dump($data_menu);
 				        $validator= new \walter74\yiipress\validators\MenuItemValidator();
@@ -573,8 +586,12 @@ class AdminController extends \yii\web\Controller
 			if($model->load(Yii::$app->request->post())) {
 				     $nm_generic_form=$this->module->modelNamespace.'\CmsGenericFieldForm';
 					 $nm_generic_model = new $nm_generic_form();
+<<<<<<< HEAD
 					 $uploaded_file=\yii\web\UploadedFile::getInstances($nm_generic_model, 'image');
 					 if(!empty($uploaded_file))
+=======
+					 if(!empty(\yii\web\UploadedFile::getInstances($nm_generic_model, 'image')))
+>>>>>>> 4df8bfe047d938d809d3f02a6202fdb341e85bdf
 					 {
 						$nm_generic_model->image = \yii\web\UploadedFile::getInstances($nm_generic_model, 'image')[0];
 					// var_dump($nm_generic_model->image);
@@ -834,9 +851,13 @@ class AdminController extends \yii\web\Controller
 				if ($model->load(Yii::$app->request->post())) {
 					$nm_generic_form=$this->module->modelNamespace.'\CmsGenericFieldForm';
 					$nm_generic_model = new $nm_generic_form();
+<<<<<<< HEAD
 					
 					$uploaded_file=\yii\web\UploadedFile::getInstances($nm_generic_model, 'image');
 					if(!empty($uploaded_file))
+=======
+					if(!empty(\yii\web\UploadedFile::getInstances($nm_generic_model, 'image')))
+>>>>>>> 4df8bfe047d938d809d3f02a6202fdb341e85bdf
 					 {
 						
 						$nm_generic_model->image = \yii\web\UploadedFile::getInstances($nm_generic_model, 'image')[0];
@@ -1309,7 +1330,11 @@ class AdminController extends \yii\web\Controller
 																	]);
 							$array_list_files=array_chunk($list_files,$pagination->pageSize);
 							
+<<<<<<< HEAD
 							$list_files=count($list_files)!=0?$array_list_files[$pagination->page]:[];
+=======
+							$list_files=$array_list_files[$pagination->page];
+>>>>>>> 4df8bfe047d938d809d3f02a6202fdb341e85bdf
 							//$list_files = array_slice($list_files, ($pagination->page-1)*$pagination->pageSize, (($pagination->page*$pagination->pageSize)> $pagination->totalCount)?($pagination->pageSize-($pagination->page*$pagination->pageSize -$pagination->totalCount)):$pagination->pageSize);										
 			                return $this->render('media/list',['list_files'=>$list_files,'pagination'=>$pagination]);
 			                

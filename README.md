@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 Yii Press - Cms Module For Yii Developer
+=======
+Yii Press - Cms Module For Yii Developer(Not Ready Yet)
+>>>>>>> 4df8bfe047d938d809d3f02a6202fdb341e85bdf
 ========================================
 Module Yii2 for content management system Yii App
 
@@ -32,7 +36,11 @@ modules configuartion array
 'modules'=>[
 			'cms' => [
            
+<<<<<<< HEAD
 						'class' => 'walter74\yii2-yiipress\Module',
+=======
+						'class' => 'walter74\yiipress\Module',
+>>>>>>> 4df8bfe047d938d809d3f02a6202fdb341e85bdf
 						
 					]
 			]

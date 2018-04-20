@@ -175,7 +175,11 @@ $content= \yii\helpers\HtmlPurifier::process($model->content, function ($config)
 
 	<?= $form->field($model, 'nome') ?>
 	<?= $form->field($model, 'tag') ?>
+<<<<<<< HEAD
 	<?= $form->field($model, 'content')->widget(\walter74\yiipress\widgets\tinymcecms\TinyMce::className(), [
+=======
+	<?= $form->field($model, 'content')->widget(\app\modules\cms\widgets\tinymcecms\TinyMce::className(), [
+>>>>>>> 4df8bfe047d938d809d3f02a6202fdb341e85bdf
                               'options' => ['id'=>'form-content','rows' => 6,'z-index'=>'10','value'=>$content],
                               'language' => Yii::$app->language ,
                               'js'=>$js,
