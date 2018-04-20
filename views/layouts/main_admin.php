@@ -3,13 +3,9 @@ use yii\helpers\Html;
 use yii\bootstrap\Nav;
 use yii\bootstrap\NavBar;
 use yii\widgets\Breadcrumbs;
-<<<<<<< HEAD
 use walter74\yiipress\assets\AppAsset;
 use walter74\yiipress\assets\AdminAsset;
-=======
-use app\modules\cms\assets\AppAsset;
-use app\modules\cms\assets\AdminAsset;
->>>>>>> 4df8bfe047d938d809d3f02a6202fdb341e85bdf
+
 
 AdminAsset::register($this);
 ?>

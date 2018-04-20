@@ -22,11 +22,9 @@ class DefaultController extends Controller
     {
 		return [ 
 				'access' => [
-<<<<<<< HEAD
+
 						'class' => \yii\filters\AccessControl::className(),
-=======
-						'class' => yii\filters\AccessControl::className(),
->>>>>>> 4df8bfe047d938d809d3f02a6202fdb341e85bdf
+
                 //'only' => ['logout','note','clienti','utenti'],
 						'rules' => [
                    

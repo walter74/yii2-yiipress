@@ -3,13 +3,9 @@ use yii\helpers\Html;
 use yii\bootstrap\Nav;
 use yii\bootstrap\NavBar;
 use yii\widgets\Breadcrumbs;
-<<<<<<< HEAD
 use walter74\yiipress\assets\AppAsset;
 use walter74\yiipress\assets\AdminAsset;
-=======
-use app\modules\cms\assets\AppAsset;
-use app\modules\cms\assets\AdminAsset;
->>>>>>> 4df8bfe047d938d809d3f02a6202fdb341e85bdf
+
 
 AdminAsset::register($this);
 ?>
@@ -74,11 +70,9 @@ AdminAsset::register($this);
       <!--sidebar start-->
       <aside>
           <div id="sidebar" class="nav-collapse " tabindex="5000" style="overflow: hidden; outline: none;">
-<<<<<<< HEAD
+
 			  <?= \walter74\yiipress\widgets\SideBar::widget()?>
-=======
-			  <?= \app\modules\cms\widgets\SideBar::widget()?>
->>>>>>> 4df8bfe047d938d809d3f02a6202fdb341e85bdf
+
               <!-- sidebar menu start-->
           <!--    <ul class="sidebar-menu" <?= (Yii::$app->controller->route=="cms/admin/index")?'style="display: block;"':''?>>                
                   <li <?= (Yii::$app->controller->route=="cms/admin/index")?'class="active"':''?>>
@@ -203,11 +197,9 @@ AdminAsset::register($this);
       <!--main content start-->
       <section id="main-content">
 		 <section class="wrapper">
-<<<<<<< HEAD
+
 			 <?= \walter74\yiipress\widgets\Alert::widget()?>
-=======
-			 <?= \app\modules\cms\widgets\Alert::widget()?>
->>>>>>> 4df8bfe047d938d809d3f02a6202fdb341e85bdf
+
            <?= $content ?>
          </section>
       </section>
