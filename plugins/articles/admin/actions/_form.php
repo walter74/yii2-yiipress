@@ -198,7 +198,7 @@ $content= \yii\helpers\HtmlPurifier::process($model->content, function ($config)
 																															'options' => ['accept' => 'image/*'],
 																												]);?>
 	
-	<?= $form->field($model, 'content')->widget(\app\modules\cms\widgets\tinymcecms\TinyMce::className(), [
+	<?= $form->field($model, 'content')->widget( walter74\yiipress\widgets\tinymcecms\TinyMce::className(), [
                               'options' => ['id'=>'form-content','rows' => 6,'z-index'=>'10','value'=>$content],
                               'language' => Yii::$app->language ,
                               'js'=>$js,
