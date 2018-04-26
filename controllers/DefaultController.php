@@ -413,13 +413,13 @@ class DefaultController extends Controller
 			  $config['encodeLabels']=false;
 			  $classname_menu=($menu->classname!='')?$menu->classname:"\yii\widgets\Menu";
 			  $menu_html=$classname_menu::widget($config);
-	          return $content=str_replace($menu->tag,$menu_html,$content);
+	          $content=str_replace($menu->tag,$menu_html,$content);
 	          
 			}   
 		  }
 		
 		
-		
+		 return $content;
 		}
 	public function ReplacementContent($content){
 			 //section replacement
